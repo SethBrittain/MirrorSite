@@ -39,7 +39,7 @@ h3 {
 .row-middle,
 .row-bottom {
     display: flex;
-    width: 85%;
+    width: 78%;
     justify-content: space-between;
 }
 
