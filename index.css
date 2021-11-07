@@ -47,7 +47,7 @@ h4 {
 .row-middle,
 .row-bottom {
     display: flex;
-    width: 78%;
+    width: 80%;
     justify-content: space-between;
 }
 
@@ -80,6 +80,7 @@ h4 {
 
 #weather-icon {
     font-size: 50px;
+    display: none;
 }
 
 .middle-middle {

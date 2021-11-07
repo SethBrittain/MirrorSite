@@ -102,7 +102,7 @@ function getUpcomingEvents() {
             "day": "8",
         },
         "Design of Digital Systems Lab": {
-            "time": "9:30",
+            "time": "9:30 AM",
             "dayOfWeek": numToWeekday(3),
             "month": numToMonth(11),
             "day": "10",
@@ -110,7 +110,7 @@ function getUpcomingEvents() {
     };
 
     Object.keys(events).forEach(function(key) {
-        html += `<div><h4>${key}</h4><p>${events[key].dayOfWeek}, ${events[key].month} ${events[key].day}</p></div>`;
+        html += `<div><h4>${key}</h4><p>${events[key].dayOfWeek}, ${events[key].month} ${events[key].day}</p><b>${events[key].time}</b><p></p></div>`;
     })
 
     $('.bottom-right').html(html);
