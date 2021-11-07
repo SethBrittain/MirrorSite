@@ -3,8 +3,9 @@ html > * {
 	background-color: black;
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    max-width: 450px;
-    max-height: 800px;
+    max-width: 1080px;
+    max-height: 1920px;
+    overflow: hidden;
 }
 
 /* Custom font size */
