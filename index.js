@@ -14,10 +14,11 @@ console.log(httpGet())
 
 function getDate() {
     let currentDate = new Date();
-    let date = [currentDate.getMonth(), currentDate.getDay(), currentDate.getFullYear()];
+    let date = [(parseInt(currentDate.getMonth())+1).toString(), (currentDate.getDay()).toString(), (currentDate.getFullYear()).toString()];
 
+    console.log(date);
     for (let i = 0; i < date.length; i++) {
-        console.log(date[i]);
+        console.log(date[i].length);
         if (date[i].length <= 1) {
             date[i] = "0"+date[i];
         }
