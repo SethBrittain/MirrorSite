@@ -27,7 +27,11 @@ h3 {
 }
 
 .container > * {
-    margin: 125px 0px 350px 0px;
+    flex-basis: 700;
+}
+
+.row-top {
+    margin-bottom: 1050px;
 }
 
 /* Rows */
@@ -68,4 +72,12 @@ h3 {
 
 #weather-icon {
     font-size: 50px;
+}
+
+.middle-middle {
+    align-items: flex-end;
+}
+
+.welcome-message {
+    text-align: bottom;
 }
