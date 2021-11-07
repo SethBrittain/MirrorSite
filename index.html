@@ -4,15 +4,19 @@
 <head>
 	<link rel="stylesheet" href="index.css" type="text/css">
     <script src="jquery-3.3.1.min.js"></script>
+    <script src="axios.min.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
     <div class="container">
         <div class="row-top">
             <span class="top-left">
-                <h3>1</h3>
+                <div class="weather-data">
+                    <span class="temp-container"><i class="material-icons" id="temp-icon">thermostat</i><h2 class="temp-degrees"></h2><i class="material-icons" id="weather-icon"></i></span>
+                </div>
             </span>
             <span class="top-middle">
-                <h2>2</h2>
+                <h2></h2><i class="material-icons">trip origin</i>
             </span>
             <span class="top-right">
                 <div class="datetime-container">
