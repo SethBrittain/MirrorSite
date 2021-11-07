@@ -86,7 +86,48 @@ function getWelcomeMessage() {
     }
 }
 
+function getUpcomingEvents() {
+    html = "<h3><i class=\"material-icons\">event</i>Calendar</h3>";
+    var events = {
+        "Hack K-State": {
+            "time": "8:00 AM",
+            "dayOfWeek": numToWeekday(0),
+            "month": numToMonth(11),
+            "day": "7",
+        },
+        "Differential Equations Lecture": {
+            "time": "11:00 AM",
+            "dayOfWeek": numToWeekday(1),
+            "month": numToMonth(11),
+            "day": "8",
+        },
+        "Design of Digital Systems Lab": {
+            "time": "9:30",
+            "dayOfWeek": numToWeekday(3),
+            "month": numToMonth(11),
+            "day": "10",
+        }
+    };
+
+    Object.keys(events).forEach(function(key) {
+        html += `<div><h4>${key}</h4><p>${events[key].dayOfWeek}, ${events[key].month} ${events[key].day}</p></div>`;
+    })
+
+    $('.bottom-right').html(html);
+}
+
+function numToWeekday(num) {
+    days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return days[num];
+}
+
+function numToMonth(num) {
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return months[num];
+}
+
 $(document).ready(function(){
+    getUpcomingEvents();
     $('.date').html(getDate());
     $('.time').html(getTime())
     printWeather()
