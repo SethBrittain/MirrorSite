@@ -6,6 +6,7 @@ This website uses the following software:
 - Apache
 - Javascript
 - Weather REST Api
+- Calendar REST Api
 
 ## Hardware
 This project uses the following hardware:
